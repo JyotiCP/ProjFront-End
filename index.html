@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+   
+<style>
+   /* Style the navigation bar */
+ .navbar {
+    overflow: hidden;
+    background-color: rgb(237, 121, 95) /* Light red background color */
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    justify-content: center;
+    float: left;
+    display: block;
+    color:  black;
+    text-align: center;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-family: Georgia, serif; /* Use Georgia font */
+}
+
+
+
+
+/* Change color on hover */
+.menubar a:hover {
+    background-color: #666;
+}
+
+/* Active/current link */
+.menubar a.active {
+    background-color: #888;
+}
+
+
+/* Style the main container */
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    font-family: sans-serif;
+}
+
+
+      /* Style the left partition */
+.left-partition1 {
+    flex: 1;
+    padding:0%;
+}
+
+/* Style the right partition */
+.right-partition1 {
+    flex: 1;
+   
+    text-align: right;
+}
+
+        /* Style the image */
+        .right-partition img {
+            max-width: 100%;
+            
+        }
+
+        .imgg{
+            height: 500px;
+            width: 500px;
+        }
+
+         /* Style the button */
+         .btn {
+            background-color:  rgb(237, 121, 95);
+            color: white;
+            padding: 5px 35px;
+            border:none;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+
+        body {
+    /* fallback for browsers that don't support gradients */
+    background-color: #ffccaa; /* Light yellow */
+    /* CSS Gradient */
+    background-image: linear-gradient(135deg, #ffccaa, #e25fa3); /* Light yellow to light pink */
+}
+
+/*styling of 2nd page'*/
+
+
+
+.container2 {
+    padding:60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-partition2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.left-partition2 img {
+    max-width: 100%;
+  
+}
+
+.img1{
+    height:200px;
+    width:200px;
+}
+
+.img2{
+    height:400px;
+    width:200px;
+}
+.right-partition2 {
+    flex: 1;
+    
+    max-width: calc(50% - 180px); /* 50% of the container width, minus any desired padding */
+    
+    
+    transform: translateX(-190px);
+    
+    padding: 50px 1px;
+    height:500px;
+ 
+    background-color: rgb(237, 121, 95);
+  
+  
+ 
+}
+
+.text-small2 {
+    font-size: 10px;
+    color:black;
+    font-family: sans-serif;
+}
+
+.text-medium2 {
+    font-size: 24px;
+    font-weight: bold;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button2 {
+    background-color: rgb(237, 121, 95);
+    color: black;
+    border: none;
+    text-align: left;
+    font-family: sans-serif;
+    
+}
+
+/* Position the right partition relative to the 3rd image in the left partition */
+.left-partition2 img:nth-child(3) {
+    position: relative;
+ 
+    right: calc(50% - 330px); /* Adjust the value based on your design */
+
+    transform: translateY(-100%);
+   
+}
+
+
+body{
+background-color: #ffccaa; /* Light yellow */
+    /* CSS Gradient */
+    margin: 0; /* Remove default margin */
+            padding: 0;
+    background-image: linear-gradient(135deg, #ffccaa, #e25fa3);
+padding: 65px;
+}
+
+        
+        
+</style>
+
+
+</head>
+<body>
+    <div class="navbar" >
+        <a href="#">Home</a>
+        <a href="#">Order</a>
+        <a href="#">Food</a>
+        <a href="#">Restaurant</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Contact Us</a>
+      <a id="Menu" href="#">☰</a>
+        
+    </div>
+
+<div class="container1">
+    <div class="left-partition1">
+        <h2>LOREM IPSUM</h2>
+        <br><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamusid est vitae dolor rhoncus tristique. Maecenas metus quam,rhoncus euismod lorem in, sollicitudin viverra eros. Donecdictum luctus quam ut tristique. Curabitur nec faucibus purus.Quisque congue sem nec justo mollis, in tincidunt erat pretium.Sed pulvinar, massa ac porta viverra.</p>
+       <br>
+        <button class="btn" id="btn">Click Me</button>
+    </div>
+
+    <div class="right-partition1">
+        <img class="imgg" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDzf8FTresRexVSlJCUV0Nn-pKssvj3DzaTi3qLyMK3rMmNwyg" alt="Image">
+    </div>
+    
+</div>
+<br><br>
+
+<div class="container2">
+  <div class="left-partition2">
+      <img class="img1" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT21lLch4Fthe7IabiFZ_U9KiWJ0pp7U8gQ71dE-KZcTK7v8wHK" alt="Image 1">
+      <img class="img1" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSso7HSvzVyJOpqwX3z_1u7IJv4VJVc38xAZ70hlWErFyhJ2QPr" alt="Image 2">
+      <img class="img2" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTk4K0pz37D9AON5jAfXEC-QYTjeQg4hzRK3vPZGZoPt_OF_KIg" alt="Image 3">
+  </div>
+  <div class="right-partition2" style="width: 70px; height: 100px;">
+      <p class="text-small2">LOREM IPSUM</p>
+      <p class="text-medium2">LOREM IPSUMSET ADEMIR</p>
+      <button class="button2">Click &rarr;</button> 
+  </div>
+</div>
+
+</body>
+
+
+</html>
